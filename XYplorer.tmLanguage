@@ -109,14 +109,14 @@
 
 		<dict>
 			<key>name</key>
-			<string>keyword.operator</string>
+			<string>keyword.operator.xys</string>
 			<key>match</key>
 			<string>([\!)(){},]|[\*\+-\/\^%]|\sUnLikeI?\s|\sLikeI?\s|\sAND\s|\sOR\s|\sXOR\s|\sNOT\s|\s\|\|\s|\B-\B|=|\s+\.\s+|(?&lt;!\w)&gt;|&lt;(?![\w&lt;])|\B&amp;?\W&amp;\B)</string>   <!--Match:  ! = || LikeI? UnLikeI? AND OR NOT XOR < > && -->
 		</dict>
 
 		<dict>
 			<key>name</key>
-			<string>string.unquoted.nowdoc</string> <!-- radical nowdoc -->
+			<string>string.unquoted.nowdoc.xys</string> <!-- radical nowdoc -->
 			<key>begin</key>
 			<string>&lt;{3}'([^#].*)'$</string>
 			<key>end</key>
@@ -124,7 +124,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>string.unquoted.nowdoc</string> <!-- regular nowdoc -->
+			<string>string.unquoted.nowdoc.xys</string> <!-- regular nowdoc -->
 			<key>begin</key>
 			<string>&lt;{3}#'(.*)'$</string>
 			<key>end</key>
@@ -132,7 +132,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>string.unquoted.heredoc</string> <!-- radical heredoc -->
+			<string>string.unquoted.heredoc.xys</string> <!-- radical heredoc -->
 			<key>begin</key>
 			<string>&lt;{3}(#.*)$</string>
 			<key>end</key>
@@ -140,7 +140,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>string.unquoted.heredoc</string> <!-- regular heredoc -->
+			<string>string.unquoted.heredoc.xys</string> <!-- regular heredoc -->
 			<key>begin</key>
 			<string>&lt;{3}([^#](.*))$</string>
 			<key>end</key>
@@ -151,7 +151,7 @@
 			<key>comment</key>
 			<string>matches subscript caption</string>
 			<key>name</key>
-			<string>string</string>
+			<string>string.xys</string>
 			<key>match</key>
 			<string>^\s*(&quot;.*?&quot;)</string>
 			<key>captures</key>
@@ -167,7 +167,7 @@
 
 <!-- 		<dict>
 			<key>name</key>
-			<string>string</string>
+			<string>string.xys</string>
 			<key>match</key>
 			<string>(&quot;|')(.*?)\1</string>
 		</dict> -->

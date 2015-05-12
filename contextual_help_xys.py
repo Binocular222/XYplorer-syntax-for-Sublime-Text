@@ -9,7 +9,7 @@ class contextual_help_xys(sublime_plugin.TextCommand):
 		if ScopeName == "source.xys entity.name.function.UDF.xys":
 			# need to handle namespaces
 			self.view.window().run_command('goto_definition')
-		elif ScopeName == "source.xys string":
+		elif ScopeName == "source.xys string.xys":
 			# goto subscript by label; needs huge refinement
 			self.view.window().run_command('goto_definition')
 		elif ScopeName == "source.xys entity.name.function.xys":
@@ -20,9 +20,7 @@ class contextual_help_xys(sublime_plugin.TextCommand):
 			subprocess.Popen(["hh.exe", xypath + "\\XYplorer.chm::/idh_variables.htm"])
 		elif ScopeName == "source.xys keyword.operator":
 			subprocess.Popen(["hh.exe", xypath + "\\XYplorer.chm::/idh_scripting.htm#idh_scripting_operatorprecedence"])
-		elif ScopeName == "source.xys string.unquoted.heredoc":
-			subprocess.Popen(["hh.exe", xypath + "\\XYplorer.chm::/idh_scripting.htm#idh_scripting_heredoc"])
-		elif ScopeName == "source.xys string.unquoted.nowdoc":
+		elif ScopeName == "source.xys string.unquoted.heredoc.xys" or ScopeName == "source.xys string.unquoted.nowdoc.xys":
 			subprocess.Popen(["hh.exe", xypath + "\\XYplorer.chm::/idh_scripting.htm#idh_scripting_heredoc"])
 		elif ScopeName == "source.xys keyword.control.xys":
 			ScopeText = ScopeText.strip('({')
